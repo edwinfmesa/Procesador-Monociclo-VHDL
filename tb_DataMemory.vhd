@@ -1,3 +1,12 @@
+-- Unidad de control de la ALU
+-- Creado por:
+-- Edwin Fernando Mesa Salazar 	
+-- Jonathan Muñoz Gomez 			
+-- Programa: Ingenieria de Sistemas y Computación
+-- Asignatura: Arquitectura de computadores
+-- Profesora: Lina Maria Perez Perez
+-- Universidad Tecnologica de Pereira
+-- 2012
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  

@@ -1,7 +1,7 @@
 -- Unidad de control de la ALU
 -- Creado por:
--- Edwin Fernando Mesa Salazar 	1088273519
--- Jonathan Muñoz Gomez 			1088278497
+-- Edwin Fernando Mesa Salazar 	
+-- Jonathan Muñoz Gomez 			
 -- Programa: Ingenieria de Sistemas y Computación
 -- Asignatura: Arquitectura de computadores
 -- Profesora: Lina Maria Perez Perez
@@ -27,53 +27,38 @@ end ALU;
 architecture Behavioral of ALU is
 
 -- posibles valores ALU_op
--- 0000 add           	R
+-- 0000 add, sw, lw    	R,i,i
 -- 0001 sub					R
 -- 0010 and					R
 -- 0011 or					R
 -- 0100 slt					R
--- 0101 lw -- sobra		i
--- 0110 sw -- sobra		i
--- 0111 beq					i
--- 1000 bne					i
+-- 0111 beq, bne			i,i
+
 
 begin
 process(clk, ALU_op,read_data_1,read_data_2)
 begin
 	case ALU_op is
-		when "0000" =>  
+		when "0000" =>  -- add, lw, sw
 			ALU_result <= read_data_1 + read_data_2;   
 			zero <= '0';	
-		when "0001" => 
+		when "0001" => -- sub
 			ALU_result<= read_data_1 - read_data_2; 
 			zero <= '0';
-		when "0010" =>
+		when "0010" => -- and
 			ALU_result <= read_data_1 AND read_data_2;  
 			zero <= '0';
-		when "0011" =>
+		when "0011" => -- or
 			ALU_result<= read_data_1 OR read_data_2;  
 			zero <= '0';
-		when "0100" =>
+		when "0100" => -- slt
 			if read_data_1<read_data_2 then 
 				ALU_result<=x"00000001";
 			else
 				ALU_result<=x"00000000"; 
 			end if;
 			zero <= '0';
-		when "0101" =>  
-			ALU_result<= read_data_1 + read_data_2; 
-			zero <= '0';
-		when "0110" =>
-			ALU_result<= read_data_1 + read_data_2; 
-			zero <= '0';
-		when "0111" =>
-			if read_data_1 - read_data_2 = x"00000000" then 
-				zero <= '1';
-			else
-				zero <= '0';
-			end if;
-			ALU_result <= x"00000000"; -- no importa
-		when "1000" =>
+		when "0111" => -- beq, bne
 			if read_data_1 - read_data_2 = x"00000000" then 
 				zero <= '1';
 			else

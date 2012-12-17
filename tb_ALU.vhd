@@ -1,7 +1,7 @@
 -- Unidad de control de la ALU
 -- Creado por:
--- Edwin Fernando Mesa Salazar 	1088273519
--- Jonathan Muñoz Gomez 			1088278497
+-- Edwin Fernando Mesa Salazar 	
+-- Jonathan Muñoz Gomez 			
 -- Programa: Ingenieria de Sistemas y Computación
 -- Asignatura: Arquitectura de computadores
 -- Profesora: Lina Maria Perez Perez

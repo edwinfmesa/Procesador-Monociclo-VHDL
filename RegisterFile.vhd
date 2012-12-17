@@ -1,7 +1,7 @@
 -- Unidad de control de la ALU
 -- Creado por:
--- Edwin Fernando Mesa Salazar 	1088273519
--- Jonathan Muñoz Gomez 			1088278497
+-- Edwin Fernando Mesa Salazar 	
+-- Jonathan Muñoz Gomez 			
 -- Programa: Ingenieria de Sistemas y Computación
 -- Asignatura: Arquitectura de computadores
 -- Profesora: Lina Maria Perez Perez
@@ -70,7 +70,7 @@ begin
 	process (clk)
 	begin
 		if (rising_edge (clk)) then 
-			if reg_write = '1' and write_register /= "00000" and write_register /= "00001" and write_register /= "11010" and write_register /= "11011" then  -- dejar solo zero
+			if reg_write = '1' and write_register /= "00000" then  -- dejar solo zero
 				memoria_reg(conv_integer (write_register)) <= write_data ;
 			end if;
 		end if;
