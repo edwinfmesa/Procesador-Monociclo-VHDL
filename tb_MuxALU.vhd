@@ -1,37 +1,16 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   17:35:07 12/17/2012
--- Design Name:   
--- Module Name:   C:/Xilinx/xilinx_projects/monociclo/tb_MuxALU.vhd
--- Project Name:  monociclo
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: MuxALU
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
+-- Test Bench MuxALU
+-- Creado por:
+-- Edwin Fernando Mesa Salazar 	
+-- Jonathan Muñoz Gomez 			
+-- Programa: Ingenieria de Sistemas y Computación
+-- Asignatura: Arquitectura de computadores
+-- Profesora: Lina Maria Perez Perez
+-- Universidad Tecnologica de Pereira
+-- 2012
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
- 
+
 ENTITY tb_MuxALU IS
 END tb_MuxALU;
  

@@ -1,4 +1,4 @@
--- Unidad de control de la ALU
+-- Memoria de registros
 -- Creado por:
 -- Edwin Fernando Mesa Salazar 	
 -- Jonathan Muñoz Gomez 			

@@ -1,4 +1,4 @@
--- Unidad de control de la ALU
+-- Test Bench SignExtend
 -- Creado por:
 -- Edwin Fernando Mesa Salazar 	
 -- Jonathan Muñoz Gomez 			

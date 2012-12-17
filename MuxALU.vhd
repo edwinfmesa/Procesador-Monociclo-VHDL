@@ -1,4 +1,4 @@
--- Unidad de control de la ALU
+-- Multiplexor para la ALU
 -- Creado por:
 -- Edwin Fernando Mesa Salazar 	
 -- Jonathan Muñoz Gomez 			

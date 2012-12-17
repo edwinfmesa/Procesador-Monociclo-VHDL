@@ -1,4 +1,4 @@
--- Unidad de control de la ALU
+-- Test Bench InstructionMemory
 -- Creado por:
 -- Edwin Fernando Mesa Salazar 	
 -- Jonathan Muñoz Gomez 			

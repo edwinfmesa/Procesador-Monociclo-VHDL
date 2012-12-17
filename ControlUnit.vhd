@@ -37,7 +37,7 @@ begin
 		-- Instructiones Tipo R
 		when "000000" =>
 			regWrite		<= '1';	--La instruccion tipo R requiere escribir en un registro
-			regDst		<= '1';  --Se selecciona el registr rt para escritura
+			regDst		<= '1';  --Se selecciona el registr rd para escritura
 			memWrite		<= '0'; 
 			memRead		<= '0';
 			memToReg		<= '0'; 
